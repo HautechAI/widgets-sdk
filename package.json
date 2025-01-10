@@ -1,0 +1,36 @@
+{
+    "name": "@hautechai/widgets",
+    "version": "0.7.0",
+    "license": "MIT",
+    "keywords": [],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/HautechAI/widgets-sdk"
+    },
+    "main": "dist/index.js",
+    "scripts": {
+        "build": "tsc",
+        "lint": "nx run-many --all --target=lint",
+        "lint:fix": "nx run-many --all --target=lint --fix",
+        "test": "jest"
+    },
+    "description": "Hautech widgets SDK",
+    "dependencies": {
+        "@hautechai/client": "0.7.0",
+        "@hautechai/rpc": "0.7.0",
+        "lodash.omit": "4.5.0"
+    },
+    "devDependencies": {
+        "@types/jest": "29.5.12",
+        "@types/jsonwebtoken": "9.0.7",
+        "@types/lodash.omit": "4.5.9",
+        "@types/node": "22.5.2",
+        "dotenv": "16.4.7",
+        "jest": "29.7.0",
+        "jest-environment-jsdom": "29.7.0",
+        "ts-jest": "29.2.5",
+        "ts-node": "10.9.2",
+        "tslib": "2.7.0",
+        "typescript": "5.5.4"
+    }
+}
