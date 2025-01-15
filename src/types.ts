@@ -1,7 +1,6 @@
 export type WidgetsSDKOptions = {
     authToken: () => string | Promise<string>;
-    endpoints?: {
-        client?: string;
-        widgets?: string;
-    };
+    endpoint?: string;
 };
+
+export type WidgetType = 'generate';

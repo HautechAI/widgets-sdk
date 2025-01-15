@@ -1,6 +1,6 @@
 import { GenerateWidgetOutcomingMethods, GenerateWidgetIncomingMethodHandlers, GenerateWidgetProps } from './types';
 import createWidget from '../utils/widget';
-import { WidgetsSDKOptions } from '../../types';
+import { WidgetsSDKOptions } from '../types';
 
 const createGenerateWidget = (options: WidgetsSDKOptions) =>
     createWidget<GenerateWidgetOutcomingMethods, GenerateWidgetIncomingMethodHandlers, GenerateWidgetProps>({

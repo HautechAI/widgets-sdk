@@ -1,6 +1,6 @@
 import { createRpcCommunication } from '@hautechai/rpc';
 import omit from 'lodash.omit';
-import { WidgetsSDKOptions } from '../../types';
+import { WidgetsSDKOptions } from '../types';
 import { WidgetType } from '../types';
 
 const createIframe = (url: string) => {
@@ -17,7 +17,7 @@ const createWidget = <WidgetOutcomingMethods, WidgetIncomingMethodHandlers, Widg
     options: WidgetsSDKOptions;
     type: WidgetType;
 }) => {
-    const baseUrl = props.options.endpoints?.widgets ?? 'https://widgets.hautech.ai';
+    const baseUrl = props.options.endpoint ?? 'https://widgets.hautech.ai';
     const iframeUrl = `${baseUrl}/${props.type}`;
     const iframe = createIframe(iframeUrl);
 

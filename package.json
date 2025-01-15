@@ -16,8 +16,8 @@
     },
     "description": "Hautech widgets SDK",
     "dependencies": {
-        "@hautechai/client": "0.7.0",
         "@hautechai/rpc": "0.7.0",
+        "@hautechai/sdk": "0.0.3",
         "lodash.omit": "4.5.0"
     },
     "devDependencies": {

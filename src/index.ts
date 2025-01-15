@@ -1,4 +1,5 @@
 export * from './sdk';
 export * from './types';
 
-export * from './widgets/types';
+export * from './generate';
+export * from './generate/types';
