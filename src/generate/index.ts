@@ -2,7 +2,7 @@ import { GenerateWidgetOutcomingMethods, GenerateWidgetIncomingMethodHandlers, G
 import createWidget from '../utils/widget';
 import { WidgetsSDKOptions } from '../types';
 
-const createGenerateWidget = (options: WidgetsSDKOptions) =>
+const createGenerateWidget = (options: WidgetsSDKOptions) => () =>
     createWidget<GenerateWidgetOutcomingMethods, GenerateWidgetIncomingMethodHandlers, GenerateWidgetProps>({
         createOutcomingMethods: (call: (method: string, args: any[]) => Promise<any>) => ({
             getImages: () => call('getImages', []),

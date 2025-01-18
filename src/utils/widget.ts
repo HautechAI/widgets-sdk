@@ -17,7 +17,7 @@ const createWidget = <WidgetOutcomingMethods, WidgetIncomingMethodHandlers, Widg
     options: WidgetsSDKOptions;
     type: WidgetType;
 }) => {
-    const baseUrl = props.options.endpoint ?? 'https://widgets.hautech.ai';
+    const baseUrl = props.options.endpoints?.widgets ?? 'https://widgets.hautech.ai';
     const iframeUrl = `${baseUrl}/${props.type}`;
     const iframe = createIframe(iframeUrl);
 
@@ -74,7 +74,7 @@ const createWidget = <WidgetOutcomingMethods, WidgetIncomingMethodHandlers, Widg
         await outcomingMethods.setProps(props);
     };
 
-    return () => ({
+    return {
         attach,
         detach,
         methods: omit(outcomingMethods, 'setProps'),
@@ -85,7 +85,7 @@ const createWidget = <WidgetOutcomingMethods, WidgetIncomingMethodHandlers, Widg
                 ...defaultIncomingMethodsHandlers,
             }),
         setProps,
-    });
+    };
 };
 
 export default createWidget;
