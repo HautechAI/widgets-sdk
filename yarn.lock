@@ -287,13 +287,14 @@
   dependencies:
     tslib "^2.3.0"
 
-"@hautechai/sdk@0.0.5":
-  version "0.0.5"
-  resolved "https://registry.yarnpkg.com/@hautechai/sdk/-/sdk-0.0.5.tgz#2126d0fc56341ec66c755670ba750c989f7fc400"
-  integrity sha512-tjy2r4EjxaIb1kK8NJvIYkTaiHNYrvW/Y8CQG/jg8LREMW71T172AvSW3ObIIjj86JDQ/2jkdPPTrWbN2kqtjg==
+"@hautechai/sdk@0.0.10":
+  version "0.0.10"
+  resolved "https://registry.yarnpkg.com/@hautechai/sdk/-/sdk-0.0.10.tgz#7d7a9b7749b42c8c32b435cdc97eca06f6d3e893"
+  integrity sha512-x8GhBDVfJmRSz8BAxDyVK0LOHxXt4UTxWo5jkgPOuMPGLkiCGR+4Tz6GvqRU9rKLs7Vs0p3TRLAokSmLw9to9Q==
   dependencies:
     axios "1.6.1"
     jsonwebtoken "8.5.1"
+    jwt-decode "4.0.0"
     pusher-js "8.4.0-rc2"
 
 "@istanbuljs/load-nyc-config@^1.0.0":
@@ -1997,6 +1998,11 @@ jws@^3.2.2:
   dependencies:
     jwa "^1.4.1"
     safe-buffer "^5.0.1"
+
+jwt-decode@4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/jwt-decode/-/jwt-decode-4.0.0.tgz#2270352425fd413785b2faf11f6e755c5151bd4b"
+  integrity sha512-+KJGIyHgkGuIq3IEBNftfhW/LfWhXUIY6OmyVWjliu5KH1y0fw7VQ8YndE2O4qZdMSd9SqbnC8GOcZEy0Om7sA==
 
 kleur@^3.0.3:
   version "3.0.3"
